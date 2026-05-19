@@ -1,9 +1,0 @@
-[Plymouth Theme]
-Name=Moobian
-Description=Moobian Boot Splash
-ModuleName=script
-
-[script]
-ImageDir=/usr/share/plymouth/themes/moobian
-ScriptFile=/usr/share/plymouth/themes/moobian/moobian.script
-
