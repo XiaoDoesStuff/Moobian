@@ -1,0 +1,41 @@
+# This list contains all the extras packages
+
+# Utilities
+wget
+curl
+git
+btop
+fastfetch
+7zip
+ffmpeg
+flatpak
+
+#VLC Media Player
+vlc
+vlc-plugin-base
+vlc-plugin-video-output
+vlc-plugin-video-splitter
+vlc-plugin-access-extra
+vlc-plugin-qt
+vlc-plugin-notify
+vlc-plugin-samba
+vlc-plugin-fluidsynth
+vlc-plugin-jack
+vlc-plugin-skins2
+vlc-plugin-svg
+vlc-plugin-visualization
+
+
+# OBS Studio
+obs-studio
+
+# Antivirus
+clamav
+clamav-daemon
+rkhunter
+
+# GIMP
+gimp
+
+# Other
+cowsay

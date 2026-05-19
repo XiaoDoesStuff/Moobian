@@ -1,0 +1,19 @@
+# This list contains packages for installing the GNOME desktop enviornment
+
+# GNOME and its dependencies
+task-gnome-desktop
+
+# Extensions for GNOME
+gnome-shell-extension-dash-to-panel
+gnome-shell-extension-desktop-icons-ng
+gnome-shell-extension-appindicator
+
+
+# Other
+gstreamer1.0-plugins-bad
+gstreamer1.0-plugins-base
+gstreamer1.0-plugins-good
+gstreamer1.0-libav
+plymouth
+plymouth-x11
+i965-va-driver

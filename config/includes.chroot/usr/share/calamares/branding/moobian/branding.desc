@@ -1,0 +1,5 @@
+---
+name: Moobian
+version: 1.0
+welcomeStyle: side
+windowSize: 800x600

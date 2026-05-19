@@ -1,0 +1,23 @@
+#!/bin/sh
+set -e
+
+echo "[Moobian] Removing Gnome and Debian bloat..."
+
+apt update
+
+apt purge -y \
+  libreoffice* \
+  gnome-maps \
+  gnome-weather \
+  gnome-music
+  eog \
+  shotwell \
+  totem \
+  gnome-sound-recorder \
+  || true
+
+apt autoremove -y --purge || true
+apt clean
+
+echo "[Moobian] Bloat removal complete."
+

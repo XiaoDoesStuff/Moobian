@@ -1,0 +1,6 @@
+#!/bin/bash
+set -e
+
+echo "[Moobian] Compiling dconf database for live session..."
+dconf update
+

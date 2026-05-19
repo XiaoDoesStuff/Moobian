@@ -1,0 +1,12 @@
+[Unit]
+Description=Fix devpts for live system
+DefaultDependencies=no
+Before=sysinit.target
+
+[Service]
+Type=oneshot
+ExecStart=/bin/mount -t devpts devpts /dev/pts -o gid=5,mode=620
+ExecStart=/bin/sh -c '[ ! -e /dev/ptmx ] && mknod -m 666 /dev/ptmx c 5 2 || true'
+
+[Install]
+WantedBy=sysinit.target

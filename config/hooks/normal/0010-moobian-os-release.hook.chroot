@@ -1,0 +1,19 @@
+#! /bin/bash
+
+set -e
+
+echo "[Moobian] Setting OS-release info"
+
+# Overwirte /etc/os-release with Moobian info for live system
+cat >/etc/os-release << EOF
+NAME="Moobian"
+PRETTY_NAME="Moobian Alpha-1 (Holstein White)"
+ID=moobian
+ID_LIKE=debian
+VERSION="Alpha-1 (Holstein White)"
+VERSION_ID="Alpha-1"
+LOGO=moobian-logo
+EOF
+
+# make a copy for installed system
+cp /etc/os-release /usr/lib/os-release

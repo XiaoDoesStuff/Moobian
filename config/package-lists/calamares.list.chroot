@@ -1,0 +1,18 @@
+# Installs the Calamares (OS installer) to Moobian. Is later removed in the shellprocess 
+# during the installation
+calamares 
+qml-module-qtquick-controls 
+qml-module-qtquick-controls2 
+qml-module-qtquick-layouts 
+qml-module-qtquick-window2 
+qml-module-qtgraphicaleffects 
+qtwayland5
+qtbase5-private-dev
+grub-common
+os-prober
+grub2-common
+grub-efi-amd64
+grub-efi-amd64-bin
+shim-signed
+efibootmgr
+mokutil

@@ -1,0 +1,20 @@
+desktop-image: "background.png"
+title-font: "unicode.pf2"
+terminal-font: "unicode.pf2"
+title-text: ""
++ label {
+    text = "Welcome to Moobian"
+    left = 42%
+    top = 20%
+}
+
+
++ boot_menu {
+    left = 20%
+    top = 25%
+    width = 50%
+    height = 50%
+    item_color = "#FFFFFF"
+    selected_item_color = "#000000"
+    selected_item_background = "#FFFF00"
+}

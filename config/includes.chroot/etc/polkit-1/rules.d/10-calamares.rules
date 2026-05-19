@@ -1,0 +1,6 @@
+# Run Calmares
+polkit.addRule(function(action, subject) {
+    if (action.id == "org.calamares.pkexec.run") {
+        return polkit.Result.YES;
+    }
+});

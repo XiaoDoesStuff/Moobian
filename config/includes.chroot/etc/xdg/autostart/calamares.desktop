@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Install Moobian
+Exec=pkexec calamares
+Terminal=false
+Categories=System;

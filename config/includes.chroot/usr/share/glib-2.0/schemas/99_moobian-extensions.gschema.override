@@ -1,0 +1,24 @@
+
+[org.gnome.desktop.background]
+picture-uri='file:///usr/share/backgrounds/moobian-default-wallpaper.png'
+picture-uri-dark='file:///usr/share/backgrounds/moobian-default-wallpaper.png'
+
+[org.gnome.desktop.interface]
+color-scheme='prefer-dark'
+enable-animations=true
+font-name='Cantarell 11'
+document-font-name='Cantarell 11'
+monospace-font-name='Monospace 11'
+
+[org.gnome.desktop.peripherals.touchpad]
+tap-to-click=true
+natural-scroll=true
+
+[org.gnome.desktop.session]
+idle-delay=uint32 600
+
+[org.gnome.settings-daemon.plugins.power]
+sleep-inactive-ac-type='nothing'
+sleep-inactive-battery-type='suspend'
+
+

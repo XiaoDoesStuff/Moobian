@@ -1,0 +1,13 @@
+#!/bin/bash
+set -e
+glib-compile-schemas /usr/share/glib-2.0/schemas/
+
+
+echo "[Moobian] Enabling GNOME extensions..."
+
+# Enable extensions offline (no GNOME Shell needed)
+gnome-extensions enable dash-to-panel@jderose9.github.com
+gnome-extensions enable ding@rastersoft.com
+gnome-extensions enable appindicatorsupport@rgcjonas.gmail.com
+
+echo "[Moobian] GNOME extensions enabled."
