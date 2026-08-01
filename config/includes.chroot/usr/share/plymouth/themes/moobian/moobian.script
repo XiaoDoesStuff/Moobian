@@ -1,3 +1,0 @@
-# Simple static image splash
-wallpaper_image = Image("moobian.png");
-wallpaper_image.SetZ(0);
