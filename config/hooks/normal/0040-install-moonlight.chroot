@@ -1,0 +1,16 @@
+#!/bin/sh
+set -e
+
+echo "Installing Flatpak and Moonlight (Flatpak version)..."
+
+# Install Flatpak inside the chroot
+apt-get update
+apt-get install -y flatpak
+
+# Add Flathub remote
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+# Install Moonlight
+flatpak install -y flathub com.moonlight_stream.Moonlight
+
+echo "Moonlight Flatpak installation complete."

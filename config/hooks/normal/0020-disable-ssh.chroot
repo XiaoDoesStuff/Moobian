@@ -1,0 +1,5 @@
+#!/bin/bash
+set -e
+
+systemctl disable ssh.service || true
+systemctl disable ssh || true

@@ -1,29 +1,12 @@
-#!/bin/bash
+#!/bin/sh
 set -e
 
-echo "[Moobian] Enabling contrib, non-free, and i386 for Steam..."
+echo "Installing Steam via Flatpak..."
 
-# 1. Enable i386 multiarch
-dpkg --add-architecture i386
+# Add Flathub remote
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
-# 2. Rewrite sources.list with contrib + non-free + non-free-firmware
-cat >/etc/apt/sources.list <<EOF
-deb http://deb.debian.org/debian trixie main contrib non-free non-free-firmware
-deb http://deb.debian.org/debian trixie-updates main contrib non-free non-free-firmware
-deb http://security.debian.org/debian-security trixie-security main contrib non-free non-free-firmware
-EOF
+# Install Steam
+flatpak install -y flathub com.valvesoftware.Steam
 
-# 3. Update package lists
-apt update
-
-# 4. Install Steam prerequisites (Steam itself comes from contrib)
-apt install -y \
-    steam-installer \
-    steam-devices \
-    steam-libs:i386 \
-    libgl1-mesa-dri:i386 \
-    libgl1:i386 \
-    libvulkan1:i386
-
-echo "[Moobian] Steam environment enabled."
-
+echo "Steam Flatpak installation complete."

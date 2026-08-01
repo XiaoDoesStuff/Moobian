@@ -19,5 +19,9 @@ apt purge -y \
 apt autoremove -y --purge || true
 apt clean
 
+gnome-extensions enable ubuntu-appindicators@ubuntu
+gnome-extensions enable ding@rastersoft.com
+gnome-extensions enable dash-to-panel@jderose9.github.com
+
 echo "[Moobian] Bloat removal complete."
 

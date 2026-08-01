@@ -1,0 +1,21 @@
+#!/bin/sh
+set -e
+
+echo "Installing Tailscale using curl installer..."
+
+# Make sure curl exists
+apt-get update
+apt-get install -y curl
+
+# Force the installer to use the correct Debian suite (Trixie)
+export ID=debian
+export VERSION_CODENAME=trixie
+
+# Run the official installer
+curl -fsSL https://tailscale.com/install.sh | sh
+
+# Enable tailscaled service
+systemctl enable tailscaled.service || true
+
+echo "Tailscale installation complete."
+

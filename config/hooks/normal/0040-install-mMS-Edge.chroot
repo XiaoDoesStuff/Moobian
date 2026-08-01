@@ -1,0 +1,19 @@
+#!/bin/sh
+set -e
+
+echo "Installing Microsoft Edge..."
+
+# Add Microsoft GPG key
+curl -fsSL https://packages.microsoft.com/keys/microsoft.asc \
+    | gpg --dearmor \
+    | tee /usr/share/keyrings/microsoft-edge.gpg > /dev/null
+
+# Add Microsoft Edge repo
+echo "deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft-edge.gpg] https://packages.microsoft.com/repos/edge stable main" \
+    > /etc/apt/sources.list.d/microsoft-edge.list
+
+# Install Edge
+apt-get update
+apt-get install -y microsoft-edge-stable
+
+echo "Microsoft Edge installation complete."

@@ -1,0 +1,12 @@
+#!/bin/bash
+set -e
+
+echo "Removing system default avatars..."
+
+# System-wide default faces
+rm -rf /usr/share/icons/desktop-base/*/emblems/*
+rm -rf /usr/share/icons/hicolor/*/emblems/*
+rm -rf /usr/share/icons/desktop-base/debian-logos/*
+rm -rf /usr/share/pixamps/debian-logo.png
+rm -rf /usr/share/desktop-base/debian-logos/*
+

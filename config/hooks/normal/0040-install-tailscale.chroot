@@ -1,0 +1,16 @@
+#!/bin/sh
+set -e
+
+echo "Installing Tailscale using curl installer..."
+
+# Add Tailscale's GPG key
+curl -fsSL https://pkgs.tailscale.com/stable/debian/trixie.noarmor.gpg | sudo tee /usr/share/keyrings/tailscale-archive-keyring.gpg >/dev/null
+# Add the tailscale repository
+curl -fsSL https://pkgs.tailscale.com/stable/debian/trixie.tailscale-keyring.list | sudo tee /etc/apt/sources.list.d/tailscale.list
+# Install Tailscale
+apt update
+apt install -y tailscale
+# Start Tailscale!
+systemctl enable tailscaled.service || true
+
+echo "Tailscale installation complete."

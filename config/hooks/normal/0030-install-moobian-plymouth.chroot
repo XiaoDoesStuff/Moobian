@@ -1,0 +1,17 @@
+#!/bin/bash
+set -e
+
+echo "Removing Plymouth packages..."
+apt remove -y plymouth plymouth-theme-* plymouth-label plymouth-x11 || true
+
+echo "Deleting remaining Plymouth directories..."
+rm -rf /usr/share/plymouth/
+rm -rf /etc/plymouth/
+rm -rf /lib/plymouth/
+rm -rf /var/lib/plymouth/
+
+echo "Stripping Plymouth from initramfs..."
+update-initramfs -u
+
+echo "Plymouth fully removed. Boot will now use text mode with no splash."
+
