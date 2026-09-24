@@ -61,6 +61,8 @@ build/full_build_cache.sh
 #=============================
 config/includes.chroot/etc/calamares/branding/default/branding.desc
 config/includes.chroot/etc/os-release
+
+
 # Ignore all symbolic links
 
 **/*@
