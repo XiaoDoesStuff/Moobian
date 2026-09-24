@@ -1,7 +1,0 @@
-NAME="Moobian"
-PRETTY_NAME="Moobian Alpha-1 (Holstein White)"
-ID=moobian
-ID_LIKE=debian
-VERSION="Alpha-1 (Holstein White)"
-VERSION_ID="Alpha-1"
-LOGO=moobian-logo

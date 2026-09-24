@@ -1,0 +1,7 @@
+NAME="Moobian"
+PRETTY_NAME="Moobian Alpha-2 (Holstein Grey)"
+ID=moobian
+ID_LIKE=debian
+VERSION="Alpha-1 (Holstein Grey)"
+VERSION_ID="Alpha-2"
+LOGO=moobian-logo

@@ -123,10 +123,10 @@ navigation: widget
 strings:
     productName:         "Moobian"
     shortProductName:    Generic
-    version:             Alpha-1 Holestein White
-    shortVersion:        Alpha-1
-    versionedName:       Moobian GNU/Linux Alpha-1 Holstein White
-    shortVersionedName:  Moobian Alpha-1
+    version:             Alpha-2 Holestein Grey
+    shortVersion:        Alpha-2
+    versionedName:       Moobian GNU/Linux Alpha-2 Holstein Grey
+    shortVersionedName:  Moobian Alpha-2
     bootloaderEntryName: Moobian
     productUrl:          https://calamares.io/
     supportUrl:          https://github.com/calamares/calamares/wiki

@@ -56,7 +56,11 @@ node_modules/
 #=============================
 build/full_build_cache.sh
 
-
+#=============================
+#  os release and calamares branding, since they will be generated during the build process.
+#=============================
+config/includes.chroot/etc/calamares/branding/default/branding.desc
+config/includes.chroot/etc/os-release
 # Ignore all symbolic links
 
 **/*@
