@@ -40,8 +40,11 @@ Current theming features include:
 ## Future of Moobian
 Moobian is a personal project that I plan to continue developing until either I lose interest or reach a point where I am happy with what it has become.
  
+
 My goal is for Moobian to be a joke operating system that is genuinely practical and enjoyable for everyday use. While the cow theme is the heart of the project, I also see it as an opportunity to learn more about Linux, system customization, distribution building, and open-source development.
+
  
 As development continues, I plan to experiment with the default application selection, branding, theming, and overall user experience. Exactly how far Moobian will go remains to be seen, but I intend to keep pushing the idea as long as it's fun and interesting.
+
 
 More README info in progess
