@@ -1,6 +1,8 @@
 #!/bin/sh
 set -e
 
+# This hook will install Steam via Flatpak, the game vendor app, to the system. The hook will add Flathub as a remote for FLatpak.
+
 echo "Installing Steam via Flatpak..."
 
 # Add Flathub remote

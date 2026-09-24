@@ -11,7 +11,12 @@ ffmpeg
 flatpak
 openssh-server
 
-#VLC Media Player
+# Remmina Remote Desktop
+remmina
+remmina-plugin-rdp
+remmina-plugin-vnc
+
+# VLC Media Player
 vlc
 vlc-plugin-base
 vlc-plugin-video-output
@@ -26,7 +31,6 @@ vlc-plugin-skins2
 vlc-plugin-svg
 vlc-plugin-visualization
 
-
 # OBS Studio
 obs-studio
 
@@ -37,6 +41,7 @@ rkhunter
 
 # GIMP
 gimp
+
 
 # Other
 cowsay

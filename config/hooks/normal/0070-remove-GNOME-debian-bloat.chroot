@@ -1,6 +1,8 @@
 #!/bin/sh
 set -e
 
+# This hook will use apt to uninstall unwanted defualt items.
+
 echo "[Moobian] Removing Gnome and Debian bloat..."
 
 apt update

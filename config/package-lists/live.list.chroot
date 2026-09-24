@@ -1,5 +1,7 @@
 # Pakcages for Live enviornment
 
+live-manual
+live-tools
 live-boot
 live-config
 live-config-systemd

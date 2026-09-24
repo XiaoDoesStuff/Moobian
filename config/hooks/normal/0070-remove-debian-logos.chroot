@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e
 
+# This hook will remove Debian logos and branding from the system.
+
 echo "Removing system default avatars..."
 
 # System-wide default faces

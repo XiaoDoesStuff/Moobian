@@ -1,6 +1,8 @@
 #!/bin/sh
 set -e
 
+# This hook will install Discord, the social app to the system. Hook will use the discord .deb for easy installation.
+
 # Download latest Discord .deb
 wget -O /tmp/discord.deb "https://discord.com/api/download?platform=linux&format=deb"
 

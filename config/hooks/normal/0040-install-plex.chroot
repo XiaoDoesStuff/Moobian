@@ -1,0 +1,14 @@
+#!/bin/bash
+
+set -e
+ 
+# This hook will install Plex via Flatpak, the game streaming app. The hook will add Flathub as a remote for FLatpak.
+
+echo "Adding Flathub..."
+flatpak remote-add --if-not-exists flathub \
+https://dl.flathub.org/repo/flathub.flatpakrepo
+ 
+echo "Installing Plex Desktop..."
+flatpak install -y flathub tv.plex.PlexDesktop
+ 
+echo "Plex installation complete."

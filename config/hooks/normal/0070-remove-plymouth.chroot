@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e
 
+# This hook removes Plymouth; thus, debian splash is removed.
+
 echo "Removing Plymouth packages..."
 apt remove -y plymouth plymouth-theme-* plymouth-label plymouth-x11 || true
 

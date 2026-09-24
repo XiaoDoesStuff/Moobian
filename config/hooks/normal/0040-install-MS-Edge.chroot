@@ -1,6 +1,8 @@
 #!/bin/sh
 set -e
 
+# This hook will install Microsoft Edge, the browser, to the system. The hook will add the MS Edge repo and install via apt.
+
 echo "Installing Microsoft Edge..."
 
 # Add Microsoft GPG key

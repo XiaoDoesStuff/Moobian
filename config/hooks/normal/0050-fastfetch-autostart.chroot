@@ -1,4 +1,7 @@
 #!/bin/sh
+
+# This hook will have fastfetch present system info and a cow ASCII art on terminal launch.
+
 set -e
 
 echo "fastfetch" >> /etc/bash.bashrc
