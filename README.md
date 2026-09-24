@@ -14,7 +14,6 @@
           . . . . . . . . . . . . . . . . . . . . 
           .   v   v   v   v   v   v   v   v   v   .
           . . . . . . . . . . . . . . . . . . . . 
-
 ---
 # Moobian Breakdown
 ## Moobian Building Blocks
@@ -24,7 +23,7 @@ Moobian is built using:
 - GNOME desktop environment
 
 ## Moobian Alpha-1 (Holstein White).
-Moobian is still in early stages of development. **Moobain Alpha-1**, codenamed **Holstein** White is missing many imporvements.
+Moobian is still in early stages of development. **Moobain Alpha-1**, codenamed **Holstein White** is missing many imporvements.
 - Debian branding is still present throughout the operating system.
 - Some hardware drivers are still not included out of the box.
 - Overall polish and user experience is rough around the edges.
@@ -49,59 +48,24 @@ As development continues, I plan to experiment with the default application sele
 
 More README info in progess
 
-## Installation
- 
-### Requirements
- 
+## Installation Requirements
 - An 8 GB or larger USB flash drive
 - A computer capable of booting from USB
 - The latest Moobian ISO
   - Build using source code and Debian Live Build
   - Download latest release via internet archive links found in releases
  
-### Creating Installation Media
- 
-#### Windows
- 
-1. Download the latest Moobian ISO.
-2. Download and open Balena Etcher.
-3. Select the Moobian ISO.
-4. Select your USB flash drive.
-5. Click **Flash** and wait for the process to complete.
- 
-#### Linux
- 
-Using GNOME Disks:
- 
-1. Open **Disks**.
-2. Select your USB drive.
-3. Click the menu button and choose **Restore Disk Image...**
-4. Select the Moobian ISO.
-5. Click **Start Restoring**.
- 
-### Installing Moobian
- 
-1. Insert the USB drive into the target computer.
-2. Boot from the USB drive using your system's boot menu.
-3. Select **Moobian Live Install**.
-4. Once the desktop loads, Calamares installer should autolaunch
-5. Follow the Calamares installer prompts.
-6. Reboot when installation is complete and remove the USB drive.
- 
 ### Notes
- 
 - UEFI systems are recommended.
 - Some Moobian themes and customizations may require Secure Boot to be disabled.
 - Moobian is currently in alpha development and may contain bugs or unfinished features.
 
 ## Credits
- 
 ### Photography
 The default Moobian wallpaper uses a photograph by **Matthias Zomer**: [black-and-white-cows-on-the-green-grass-field](https://www.pexels.com/photo/black-and-white-cows-on-the-green-grass-field-10829198/). Photo courtesy of Matthias Zomer via Pexels and used in accordance with the Pexels License.
 
 ### Open Source Projects
 Moobian would not be possible without the work of the following projects and communities:
- 
 - **[Debian Project](https://www.debian.org/)** - Provides the base operating system, package repositories, and development infrastructure upon which Moobian is built.
 - **[GNOME Project](https://www.gnome.org/)** - Provides the desktop environment and many of the core desktop applications included with Moobian.
 - **[Calamares](https://calamares.io/)** - Provides the graphical system installer used by Moobian.
@@ -111,5 +75,4 @@ Moobian would not be possible without the work of the following projects and com
 A sincere thank you to all contributors, maintainers, designers, testers, and community members involved in these projects.
  
 ### Moobian
- 
-Moobian is developed and maintained by **XiaoDoesStuff** as a personal project focused on learning Linux distribution development while creating the most moo-tiful operating system possible. 🐄
+Moobian is developed and maintained by [**XiaoDoesStuff**](https://github.com/XiaoDoesStuff) as a personal project focused on learning Linux distribution development while creating the most moo-tiful operating system possible. 🐄
