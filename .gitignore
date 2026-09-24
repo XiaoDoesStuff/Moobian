@@ -52,9 +52,9 @@ __pycache__/
 node_modules/
 
 #=============================
-#  Move.sh script
+#  build with apt cahce script
 #=============================
-build/move.sh
+build/full_build_cache.sh
 
 
 # Ignore all symbolic links

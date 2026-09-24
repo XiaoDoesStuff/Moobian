@@ -45,7 +45,8 @@ mkdir -p config/package-lists
 
 echo "[Moobian] Deep clean complete."
 # Configure live-build
-lb config --distribution trixie --debian-installer live
+lb config --distribution trixie --debian-installer live --apt-http-proxy http://127.0.0.1:3142
+
 # Build ISO
 lb build
 
