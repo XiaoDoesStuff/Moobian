@@ -1,10 +1,10 @@
 #!/bin/bash
 set -e
 # copy build/os-release to config/includes.chroot/etc/os-release
-cp os-release ../config/includes.chroot/etc/os-release
+cp build/os-release config/includes.chroot/etc/os-release
 
 # copy build/Calamares-Branding-Description to config/includes.chroot/calamares/branding/default/branding.desc
-cp Calamares-Branding-Description ../config/includes.chroot/etc/calamares/branding/default/branding.desc
+cp build/Calamares-Branding-Description config/includes.chroot/etc/calamares/branding/default/branding.desc
 
 echo "=== Starting Minimal Debian Trixie Live Build ==="
 
