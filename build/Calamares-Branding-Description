@@ -128,11 +128,11 @@ strings:
     versionedName:       Moobian GNU/Linux Alpha-2 Holstein Grey
     shortVersionedName:  Moobian Alpha-2
     bootloaderEntryName: Moobian
-    productUrl:          https://calamares.io/
-    supportUrl:          https://github.com/calamares/calamares/wiki
-    knownIssuesUrl:      https://github.com/calamares/calamares/issues
-    releaseNotesUrl:     https://calamares.io/news/
-    donateUrl:           https://kde.org/community/donations/index.php
+    productUrl:          https://github.com/XiaoDoesStuff/Moobian
+    supportUrl:          https://github.com/XiaoDoesStuff/Moobian
+    knownIssuesUrl:      https://github.com/XiaoDoesStuff/Moobian/issues
+    releaseNotesUrl:     https://github.com/XiaoDoesStuff/Moobian/releases
+    donateUrl:           https://google.com
 
 # These images are loaded from the branding module directory.
 #

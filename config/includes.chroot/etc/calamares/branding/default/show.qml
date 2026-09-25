@@ -22,41 +22,68 @@ Presentation
 
     Timer {
         id: advanceTimer
-        interval: 1000
+        interval: 10000
         running: presentation.activatedInCalamares
         repeat: true
         onTriggered: nextSlide()
     }
 
     Slide {
-
-        Image {
-            id: background
-            source: "squid.png"
-            width: 200; height: 200
-            fillMode: Image.PreserveAspectFit
-            anchors.centerIn: parent
-        }
         Text {
-            anchors.horizontalCenter: background.horizontalCenter
-            anchors.top: background.bottom
-            text: "This is a customizable QML slideshow.<br/>"+
-                  "Distributions should provide their own slideshow and list it in <br/>"+
-                  "their custom branding.desc file.<br/>"+
-                  "To create a Calamares presentation in QML, import calamares.slideshow,<br/>"+
-                  "define a Presentation element with as many Slide elements as needed."
-            wrapMode: Text.WordWrap
-            width: presentation.width
-            horizontalAlignment: Text.Center
+            anchors.centerIn: parent
+            textFormat: Text.PlainText
+            text: "Moobian is built using:\n\n" +
+                  "- Debian Live-Build\n" +
+                  "- Debian 13 (Trixie) as a base\n" +
+                  "- GNOME desktop environment"
+            horizontalAlignment: Text.Alignleft
         }
     }
 
     Slide {
-        centeredText: qsTr("This is a second Slide element.")
+        Text {
+            anchors.centerIn: parent
+            textFormat: Text.PlainText
+            font.family: "monospace"
+            font.pointSize: 12
+            horizontalAlignment: Text.AlignLeft
+                text: "         \\ | / \n" +
+                      "       --- ☼ --- \n" +
+                      "         / | \\ \n" +
+                      "      ______________________\n" +
+                      "     <      MOOOOOOO!       > \n" +
+                      "      ---------------------- \n" +
+                      "         \\\\   ^__^\n" +
+                      "          \\\\  (oo)\\\\_______\n" +
+                      "             (__)\\\\        )\\\\ \n" +
+                      "                   ||---w  | \\\\ \n" +
+                      "                   ||     ||      \n" +
+                      ". . . . . . . . . . . . . . . . .  .\n" +
+                      ".   v   v   v   v   v   v   v   v  .\n" +
+                      ". . . . . . . . . . . . . . . .  . ."
+        }
     }
 
     Slide {
-        centeredText: qsTr("This is a third Slide element.")
+        Text {
+            anchors.centerIn: parent
+            width: presentation.width * 0.9
+            textFormat: Text.RichText
+            wrapMode: Text.WordWrap
+            horizontalAlignment: Text.AlignLeft
+            font.pointSize: 11
+            linkColor: "#2b6cb0"
+            text: qsTr(
+                "Moobian would not be possible without the work of the following projects and communities:<br/><br/>" +
+                "<b><a href='https://www.debian.org/'>Debian Project</a></b> - Provides the base operating system, package repositories, and development infrastructure upon which Moobian is built.<br/><br/>" +
+                "<b><a href='https://www.gnome.org/'>GNOME Project</a></b> - Provides the desktop environment and many of the core desktop applications included with Moobian.<br/><br/>" +
+                "<b><a href='https://calamares.io/'>Calamares</a></b> - Provides the graphical system installer used by Moobian.<br/><br/>" +
+                "<b><a href='https://github.com/debian-live/live-build'>Debian Live-Build</a></b> - Powers the creation and customization of Moobian installation images.<br/><br/>" +
+                "<b><a href='https://github.com/torvalds/linux'>Linux Kernel Developers</a></b> - Maintain the Linux kernel that serves as the foundation of the operating system.<br/><br/>" +
+                "A sincere thank you to all contributors, maintainers, designers, testers, and community members involved in these projects."
+            )
+            onLinkActivated: Qt.openUrlExternally(link)
+        }
     }
 
     // When this slideshow is loaded as a V1 slideshow, only
