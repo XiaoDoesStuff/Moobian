@@ -1,0 +1,13 @@
+#!/bin/sh
+set -e
+# This hook will install Moonlight via Flatpak, the game streaming app. The hook will add Flathub as a remote for Flatpak.
+
+echo "Installing Moonlight (Flatpak version)..."
+
+# Add Flathub remote
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+# Install Moonlight
+flatpak install -y flathub com.moonlight_stream.Moonlight
+
+echo "Moonlight Flatpak installation complete."

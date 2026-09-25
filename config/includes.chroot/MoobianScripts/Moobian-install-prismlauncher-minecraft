@@ -1,0 +1,23 @@
+#!/bin/sh
+set -e
+
+# This hook will install Prism Launcher, an alternate launcher for Minecraft, to the system. 
+# The hook will add the Prism Launcher repo and install via apt.
+
+# Add Prism Launcher key
+wget -O /usr/share/keyrings/prismlauncher-archive-keyring.gpg \
+  https://prism-launcher-for-debian.github.io/repo/prismlauncher.gpg
+
+# Hardcode Debian codename to avoid Moobian os-release changes
+CODENAME="trixie"
+
+# Add Prism Launcher repo
+echo "deb [signed-by=/usr/share/keyrings/prismlauncher-archive-keyring.gpg] \
+https://prism-launcher-for-debian.github.io/repo ${CODENAME} main" \
+  > /etc/apt/sources.list.d/prismlauncher.list
+
+apt-get update
+
+# Install Prism Launcher
+apt-get install -y prismlauncher
+
