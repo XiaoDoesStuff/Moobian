@@ -1,7 +1,0 @@
-#!/bin/sh
-
-# This hook will have add MoobianScripts to the PATH variable for all users.
-
-set -e
-
-echo 'export PATH="$PATH:/MoobianScripts"' >> /etc/bash.bashrc

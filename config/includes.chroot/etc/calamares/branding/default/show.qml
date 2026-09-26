@@ -32,6 +32,7 @@ Presentation
         Text {
             anchors.centerIn: parent
             textFormat: Text.PlainText
+            font.pointSize: 16
             text: "Moobian is built using:\n\n" +
                   "- Debian Live-Build\n" +
                   "- Debian 13 (Trixie) as a base\n" +
