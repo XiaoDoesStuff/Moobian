@@ -22,11 +22,11 @@ Moobian is built using:
 - Debian 13 (Trixie) as a base
 - GNOME desktop environment
 
-## Moobian Alpha-1 (Holstein White).
-Moobian is still in early stages of development. **Moobain Alpha-1**, codenamed **Holstein White** is missing many imporvements.
-- Debian branding is still present throughout the operating system.
+## Moobian Alpha-2 (Holstein Grey).
+Moobian is still in early stages of development. **Moobain Alpha-2**, codenamed **Holstein Grey** is missing some imporvements.
+- Debian branding may still present throughout the operating system.
 - Some hardware drivers are still not included out of the box.
-- Overall polish and user experience is rough around the edges.
+- Overall polish and user experience isn't perfect around the edges.
 
 ## Moobian Theme
 Moobian is cow themed from boot to desktop to terminal.
@@ -35,6 +35,42 @@ Current theming features include:
   - Secure Boot must be disabled for the custom GRUB font to display correctly.
 - A cow-themed GNOME wallpaper
 - Fastfetch configured to launch automatically when opening a terminal, featuring custom cow ASCII art
+
+## Moobian Scripts
+Moobian includes a collection of built-in utility and installer scripts. These scripts are provided for software and tools that I personally use.
+
+All scripts are automatically added to your system's `$PATH`, allowing them to be run from any terminal session.
+
+### Using Scripts
+
+1. Open a terminal.
+2. Type:
+
+```bash
+Moobian
+```
+
+3. Press `Tab` to view all available Moobian scripts.
+4. Run a script by typing its name:
+
+```bash
+MoobianExample
+```
+
+### Available Scripts
+
+| Script | Description |
+|----------|-------------|
+| `Moobian-install-prismlauncher-minecraft` | Install [Prism Launcher (An open-source Minecraft launcher)](https://prismlauncher.org/)|
+| `Moobian-install-plex-client` | Install [Plex Desktop Client](https://www.plex.tv/media-server-downloads/?cat=plex+desktop&plat=linux#plex-app)|
+| `Moobian-install-MS-Edge` | Install [Microsoft Edge](https://explore.microsoft.com/en-us/edge)|
+| `Moobian-install-moonlight-game-streaming` | Install [Moonlight (Open source game streaming client)](https://moonlight-stream.org/)  |
+### Notes
+
+- Scripts are available globally through `$PATH`.
+- Some scripts may require elevated privileges (`sudo`).
+- These scripts are maintained as part of the Moobian project and may change between releases.
+
 
 ## Future of Moobian
 Moobian is a personal project that I plan to continue developing until either I lose interest or reach a point where I am happy with what it has become.
@@ -45,12 +81,13 @@ My goal is for Moobian to be a joke operating system that is genuinely practical
 
 As development continues, I plan to experiment with the default application selection, branding, theming, and overall user experience. Exactly how far Moobian will go remains to be seen, but I intend to keep pushing the idea as long as it's fun and interesting.
 
-
-More README info in progess
-
 ## Installation Requirements
-- An 8 GB or larger USB flash drive
-- A computer capable of booting from USB
+- An 8 GB or larger USB flash drive for insaller media
+- A computer that can boot from USB
+- As Moobian is Debian 13 amd64 based, please follow the [Debian requirements](https://www.debian.org/releases/stable/amd64/ch03s04.en.html):
+ - 1 GHz single-core
+ - 2 GB RAM
+ - 10 GB of Storage
 - The latest Moobian ISO
   - Build using source code and Debian Live Build
   - Download latest release via internet archive links found in releases

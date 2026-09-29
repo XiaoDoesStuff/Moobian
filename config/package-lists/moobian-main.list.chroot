@@ -7,14 +7,10 @@ git
 btop
 fastfetch
 7zip
+sed
 ffmpeg
 flatpak
 openssh-server
-
-# Remmina Remote Desktop
-remmina
-remmina-plugin-rdp
-remmina-plugin-vnc
 
 # VLC Media Player
 vlc
