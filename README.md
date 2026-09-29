@@ -36,6 +36,9 @@ Current theming features include:
 - A cow-themed GNOME wallpaper
 - Fastfetch configured to launch automatically when opening a terminal, featuring custom cow ASCII art
 
+![Desktop Wallpaper Example](GitHub_Assets/DesktopExample.png)
+
+![Terminal Fastfetch Example](GitHub_Assets/TerminalExample.png)
 ## Moobian Scripts
 Moobian includes a collection of built-in utility and installer scripts. These scripts are provided for software and tools that I personally use.
 
